@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🔹 Transisi global agar semua elemen ikut smooth saat dark mode berubah */
+html,
+body {
+  @apply transition-colors duration-500 ease-in-out;
+  background-color: theme("colors.gray.100");
+  color: theme("colors.gray.900");
+}
+
+/* 🔹 Saat dark mode aktif, ubah warna dasar */
+html.dark,
+body.dark {
+  background-color: theme("colors.gray.900");
+  color: theme("colors.gray.100");
+}
+
+/* 🔹 Transisi tambahan untuk seluruh elemen */
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+  transition: background-color 0.6s ease, color 0.6s ease,
+    border-color 0.6s ease;
+}
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+a:focus,
+button:focus {
+  outline: 2px solid theme("colors.blue.500");
+  outline-offset: 2px;
+}
+/*@media (min-width: 768px) {
+  .app-content {
+    padding-left: 16rem;
+  } /* 16rem = w-64 */
+/*}
+.app-content {
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+}*/

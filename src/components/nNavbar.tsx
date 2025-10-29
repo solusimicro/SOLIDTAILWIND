@@ -199,11 +199,16 @@ const Navbar: Component = () => {
       </header>
 
       {/* Desktop left sidebar */}
-      <aside class="hidden md:fixed md:inset-y-0 md:left-0 md:w-64 md:pt-16 md:flex md:flex-col md:border-r md:border-gray-200 dark:md:border-gray-700 md:bg-white/60 dark:md:bg-gray-900/60 md:backdrop-blur z-30">
+      <aside
+        class="hidden md:fixed md:inset-y-0 md:left-0 md:w-64 md:pt-16 md:flex md:flex-col 
+  md:border-r md:border-gray-200 dark:md:border-gray-700 
+  md:bg-white dark:md:bg-gray-900 z-30"
+      >
         <nav class="px-2 py-4 flex-1 space-y-1 overflow-auto">
           <NavLink
             href="/"
-            class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition"
+            class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 dark:text-gray-200 
+             hover:bg-gray-50 dark:hover:bg-gray-800 transition"
             activeClass="bg-indigo-50 dark:bg-gray-800 text-indigo-600"
           >
             <Home class="w-5 h-5" />
@@ -212,7 +217,8 @@ const Navbar: Component = () => {
 
           <NavLink
             href="/datawarga"
-            class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition"
+            class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 dark:text-gray-200 
+             hover:bg-gray-50 dark:hover:bg-gray-800 transition"
             activeClass="bg-indigo-50 dark:bg-gray-800 text-indigo-600"
           >
             <Users class="w-5 h-5" />
@@ -221,7 +227,8 @@ const Navbar: Component = () => {
 
           <NavLink
             href="/iuran"
-            class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition"
+            class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 dark:text-gray-200 
+             hover:bg-gray-50 dark:hover:bg-gray-800 transition"
             activeClass="bg-indigo-50 dark:bg-gray-800 text-indigo-600"
           >
             <CreditCard class="w-5 h-5" />
@@ -230,7 +237,8 @@ const Navbar: Component = () => {
 
           <NavLink
             href="/kas"
-            class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition"
+            class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 dark:text-gray-200 
+             hover:bg-gray-50 dark:hover:bg-gray-800 transition"
             activeClass="bg-indigo-50 dark:bg-gray-800 text-indigo-600"
           >
             <Box class="w-5 h-5" />
@@ -239,7 +247,8 @@ const Navbar: Component = () => {
 
           <NavLink
             href="/laporan"
-            class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition"
+            class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 dark:text-gray-200 
+             hover:bg-gray-50 dark:hover:bg-gray-800 transition"
             activeClass="bg-indigo-50 dark:bg-gray-800 text-indigo-600"
           >
             <BarChart2 class="w-5 h-5" />
@@ -248,7 +257,8 @@ const Navbar: Component = () => {
 
           <NavLink
             href="/settings"
-            class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition"
+            class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 dark:text-gray-200 
+             hover:bg-gray-50 dark:hover:bg-gray-800 transition"
             activeClass="bg-indigo-50 dark:bg-gray-800 text-indigo-600"
           >
             <Settings class="w-5 h-5" />

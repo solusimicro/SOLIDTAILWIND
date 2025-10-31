@@ -302,7 +302,16 @@ const Navbar: Component = () => {
               <span>Iuran</span>
             </div>
           </NavLink>
-
+          <NavLink
+            href="/kas"
+            class="flex-1 text-center text-gray-700 dark:text-gray-200 hover:text-indigo-600 transition py-1 px-2 rounded-lg"
+            activeClass="text-indigo-600 bg-indigo-50 dark:bg-gray-800"
+          >
+            <div class="flex flex-col items-center text-xs">
+              <CreditCard class="w-6 h-6 mb-0.5" />
+              <span>Kas RT</span>
+            </div>
+          </NavLink>
           <NavLink
             href="/profile"
             class="flex-1 text-center text-gray-700 dark:text-gray-200 hover:text-indigo-600 transition py-1 px-2 rounded-lg"

@@ -1,0 +1,43 @@
+{
+  // 🔧 Nonaktifkan validator CSS bawaan VS Code (karena bentrok dengan Tailwind)
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+
+  // 💡 Aktifkan IntelliSense Tailwind
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.suggest.insertMode": "replace",
+  "tailwindCSS.emmetCompletions": true,
+
+  // 🧠 Deteksi Tailwind di berbagai file
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html",
+    "postcss": "css",
+    "javascript": "javascript",
+    "typescript": "javascript",
+    "typescriptreact": "javascriptreact"
+  },
+
+  // 📚 Pastikan file CSS dikenali sebagai Tailwind
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+
+  // 🪄 Auto format dan auto sort Tailwind class saat Save
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit"
+  },
+
+  // 🧹 Gunakan Prettier untuk format file
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // 🌀 Aktifkan plugin sort Tailwind (pastikan sudah install)
+  "editor.formatOnSave": true,
+  "tailwindCSS.experimental.classRegex": [
+    ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ["tw`([^`]*)`", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ]
+}
